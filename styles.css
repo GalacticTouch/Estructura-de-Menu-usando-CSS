@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f5f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #002855;
+    padding: 20px;
+    color: #fff;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 28px;
+}
+
+nav {
+    background-color: #003E7E;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    display: block;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0056b3;
+    display: none;
+    flex-direction: column;
+    min-width: 180px;
+}
+
+nav ul ul li {
+    margin: 0;
+}
+
+nav ul ul li a {
+    padding: 10px 15px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+.hero {
+    background-image: url('https://www.banreservas.com/_catalogs/masterpage/Banner1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h2, .hero p {
+    color: #003E7E;
+}
+
+.content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content h2 {
+    color: #003E7E;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.content p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.section .card {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex: 1;
+    margin: 0 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.section .card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.section .card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #003E7E;
+}
+
+.section .card p {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.section .card a {
+    text-decoration: none;
+    color: #003E7E;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.section .card a:hover {
+    color: #0056b3;
+}
+
+footer {
+    background-color: #002855;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
